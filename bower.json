@@ -1,6 +1,6 @@
 {
   "name": "angara.chartjs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
     "Information Technologies in Science Lab of Moscow State University",
     "Microsoft Research"
@@ -17,15 +17,24 @@
   "keywords": [],
   "ignore": [
     "**/.*",
-    ".vscode",
+    "bin",    
     "bower_components",
-    "ext",
+    "docs",
     "node_modules",
-    "sln",
+    "packages",
+    "paket-files",
     "src",
+    "temp",
+    "tests",
     "typings",
+    "*.sln",
+    "*.yml",
+    "*.cmd",
+    "*.sh",    
     "Gruntfile.js",
     "package.json",
+    "paket.*",
+    "*.xml",
     "tsd.json"
   ],
   "dependencies": {
