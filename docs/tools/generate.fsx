@@ -11,17 +11,17 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/Angara.Statistics"
+let website = "/Angara.Chart"
 
-let githubLink = "http://github.com/microsoft/Angara.Statistics"
+let githubLink = "http://github.com/microsoft/Angara.Chart"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "Angara.Statistics"
+  [ "project-name", "Angara.Chart"
     "project-author", "MSU ITIS Lab"
-    "project-summary", "A collection of statistics algorithms from Mersenne twister generator to MCMC sampling."
+    "project-summary", "Data visualization library for F#."
     "project-github", githubLink
-    "project-nuget", "http://nuget.org/packages/Angara.Statistics" ]
+    "project-nuget", "http://nuget.org/packages/Angara.Chart" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below
