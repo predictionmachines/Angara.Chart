@@ -1,16 +1,16 @@
 type project
 title
-    ##ProjectName##
+    Angara.Chart
 owners
     Microsoft Research; MSU ITIS Lab
 authors 
     Microsoft Research; MSU ITIS Lab
 projectUrl
-    http://github.com/Microsoft/Angara.Chart
+    http://github.com/predictionmachines/Angara.Chart
 iconUrl
-    https://raw.githubusercontent.com/Microsoft/Angara.Chart/master/docs/files/img/logo.png
+    https://raw.githubusercontent.com/predictionmachines/Angara.Chart/master/docs/files/img/logo.png
 licenseUrl
-    http://github.com/Microsoft/Angara.Chart/blob/master/LICENSE.txt
+    http://github.com/predictionmachines/Angara.Chart/blob/master/LICENSE.txt
 requireLicenseAcceptance
     false
 copyright
