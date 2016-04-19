@@ -1,0 +1,23 @@
+type project
+title
+    ##ProjectName##
+owners
+    Microsoft Research; MSU ITIS Lab
+authors 
+    Microsoft Research; MSU ITIS Lab
+projectUrl
+    http://github.com/Microsoft/Angara.Chart
+iconUrl
+    https://raw.githubusercontent.com/Microsoft/Angara.Chart/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/Microsoft/Angara.Chart/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2016
+tags
+    Chart Plot Visualization F#
+summary
+    Data visualization library for F#.
+description
+    An F# library that allows to define and display a chart as a collection of plots such as line, band, markers, heatmap. Supports visualization of uncertain values. Powered by JavaScript library InteractiveDataDisplay.
