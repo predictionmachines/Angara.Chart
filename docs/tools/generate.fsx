@@ -28,7 +28,7 @@ let info =
 // --------------------------------------------------------------------------------------
 
 #load "../../packages/build/FSharp.Formatting/FSharp.Formatting.fsx"
-//#load "formatters.fsx"
+#load "formatters.fsx"
 #I "../../packages/build/FAKE/tools/"
 #r "FakeLib.dll"
 open Fake
@@ -110,7 +110,7 @@ let buildReference () =
 let buildDocumentation () =
 
   // First, process files which are placed in the content root directory.
-  let evaluator = FsiEvaluator() // Formatters.createFsiEvaluator() 
+  let evaluator = Formatters.createFsiEvaluator() 
   Literate.ProcessDirectory
     ( content, docTemplate, output, replacements = ("root", root)::info,
       layoutRoots = layoutRootsAll.["en"],

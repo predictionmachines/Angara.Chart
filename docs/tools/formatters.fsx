@@ -1,4 +1,4 @@
-#r "../../packages/Angara.Serialization/lib/net452/Angara.Serialization.dll"
+#r "../../packages/docs/Angara.Serialization/lib/net452/Angara.Serialization.dll"
 #r "../../packages/docs/Angara.Serialization.Json/lib/net452/Angara.Serialization.Json.dll"
 #r "../../packages/docs/Angara.Reinstate/lib/net452/Angara.Reinstate.dll"
 #r "../../packages/docs/Angara.Html/lib/net452/Angara.Html.dll"
