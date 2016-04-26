@@ -35,14 +35,12 @@ GROUP Docs
 NUGET
   remote: https://www.nuget.org/api/v2
   specs:
-    Angara.Html (0.2.1)
-      Angara.Reinstate (>= 0.2.1)
-      Angara.Serialization
-      Angara.Serialization.Json
-      DotNetZip
-    Angara.Reinstate (0.2.1)
-      Angara.Serialization
-      Angara.Serialization.Json
+    Angara.Html (0.1.5)
+      Angara.Reinstate (>= 0.1.5)
+      Angara.Serialization.Json (>= 0.1.2)
+      DotNetZip (>= 1.9.8)
+    Angara.Reinstate (0.1.5)
+      Angara.Serialization.Json (>= 0.1.2)
     Angara.Serialization (0.2)
     Angara.Serialization.Json (0.2)
       Angara.Serialization (>= 0.2)

@@ -18,6 +18,6 @@ group Test
   nuget NUnit.Runners ~> 2
 
 group Docs
-  source https://www.nuget.org/api/v2
+source https://www.nuget.org/api/v2
 
 nuget Angara.Html
