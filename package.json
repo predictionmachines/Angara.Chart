@@ -1,6 +1,6 @@
 {
   "name": "Angara.ChartJS",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "license": "Microsoft Research",
   "private": true,
   "main": "Gruntfile.js",
