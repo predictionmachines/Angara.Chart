@@ -120,7 +120,7 @@ type Plot private () =
     static let defaultSizePalette = MarkersSizePalette.Normalized(10.0, 30.0)
     static let defaultSize = 8.0
     static let defaultShape = MarkersShape.Box
-    static let defaultBorderColor = "black"
+    static let defaultBorderColor = "none"
     static let defaultColor = "#606060"
     static let defaultStroke = "#1F497D"
     static let defaultThickness = 1.0
@@ -233,7 +233,7 @@ type Plot private () =
         ; DisplayName = name
         ; Titles = titles
         ; Properties = 
-            Map.ofList ([ "x", x; "y", y2; "shape", shapeToPropertyValue shape2; "borderColor", PlotPropertyValue.StringValue borderColor ] @ color2 @ size2) }
+            Map.ofList ([ "x", x; "y", y2; "shape", shapeToPropertyValue shape2; "border", PlotPropertyValue.StringValue borderColor ] @ color2 @ size2) }
 
     /// Displays data as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis. 
     static member markers (seriesX : float[], seriesY : float[], ?color : MarkersColor, 

@@ -159,7 +159,8 @@ let markers = [ Plot.markers(lon, lat, displayName = "wheat") ] |> Chart.ofList
 let markers_colors =
   [ Plot.markers(lon, lat, 
       color = MarkersColor.Values wheat, 
-      colorPalette = "0=Red=Green=Yellow=Blue=10", 
+      colorPalette = "0=Red=Green=Yellow=Blue=10",
+      borderColor = "black", 
       shape = MarkersShape.Circle, 
       displayName = "wheat",
       titles = Titles.markers("lon", "lat", color = "wheat production")) ] 
@@ -227,7 +228,8 @@ let markers_box =
 
 (** **Heatmap** displays a graphical representation of data where the individual values contained 
 in a matrix are represented as colors. If the values are uncertain, 
-it allows to see quantiles of each point and highlight regions with similar values. *)
+it allows to see quantiles of each point and highlight regions with similar values.
+The plot supports `NaN` as all other plots; corresponding cells are colored with transparent grey. *)
 
 let grid_lon = grid |> col "lon"
 let grid_lat = grid |> col "lat"
