@@ -5,9 +5,9 @@ NUGET
 GROUP Build
 NUGET
   remote: https://www.nuget.org/api/v2
-    FAKE (4.25.4)
+    FAKE (4.33.1)
     FSharp.Compiler.Service (2.0.0.6)
-    FSharp.Formatting (2.14.2)
+    FSharp.Formatting (2.14.4)
       FSharp.Compiler.Service (2.0.0.6)
       FSharpVSPowerTools.Core (>= 2.3 < 2.4)
     FSharpVSPowerTools.Core (2.3)
@@ -21,24 +21,27 @@ NUGET
     Node.js (5.3)
     Npm.js (2.13.1)
       Node.js (>= 0.12.7)
-    Octokit (0.19)
-      Microsoft.Net.Http
+    Octokit (0.20)
+      Microsoft.Net.Http  - framework: net10, net11, net20, net30, net35, net40, net40-full
     SourceLink.Fake (1.1)
 GITHUB
   remote: fsharp/FAKE
-    modules/Octokit/Octokit.fsx (8f3531f4c47b86e51b4e32409bd760f79a555c62)
-      Octokit
+    modules/Octokit/Octokit.fsx (644721c4e7ca469c3534863e1e3967ee9269d239)
+      Octokit (>= 0.20)
 GROUP Docs
 NUGET
   remote: https://www.nuget.org/api/v2
-    Angara.Html (0.2.2)
-      Angara.Reinstate (>= 0.2.2)
-      Angara.Serialization
-      Angara.Serialization.Json
-      DotNetZip
-    Angara.Reinstate (0.2.2)
-      Angara.Serialization
-      Angara.Serialization.Json
+    Angara.Html (0.2.3)
+      Angara.Reinstate (>= 0.2.3)
+      Angara.Serialization (>= 0.2 < 0.3)
+      Angara.Serialization.Json (>= 0.2 < 0.3)
+      DotNetZip (>= 1.10.1 < 1.11)
+      Newtonsoft.Json (>= 8.0 < 9.0)
+      Suave (>= 1.1.2 < 1.2)
+    Angara.Reinstate (0.2.3)
+      Angara.Serialization (>= 0.2 < 0.3)
+      Angara.Serialization.Json (>= 0.2 < 0.3)
+      Newtonsoft.Json (>= 8.0 < 9.0)
     Angara.Serialization (0.2)
     Angara.Serialization.Json (0.2)
       Angara.Serialization (>= 0.2)
@@ -49,8 +52,11 @@ NUGET
       Angara.Serialization (>= 0.2 < 0.3)
       Angara.Statistics (>= 0.1 < 1.0)
       System.Collections.Immutable (1.1.36)
-    DotNetZip (1.9.8)
+    DotNetZip (1.10.1)
+    FSharp.Core (4.0.0.1)
     Newtonsoft.Json (8.0.3)
+    Suave (1.1.3)
+      FSharp.Core (>= 3.1.2.5)
     System.Collections.Immutable (1.1.36)
 
 GROUP Test

@@ -48,8 +48,8 @@ Plot Gallery
 ------------
 
 This section is a gallery of plots supported by the Angara.Chart.
-Here we use [http://github.com/predictionmachines/Angara.Table](Angara.Table) to load sample 
-data which then is displayed using Angara.Chart.
+Here we use [Angara.Table](http://github.com/predictionmachines/Angara.Table) to load sample 
+data which then is displayed with Angara.Chart.
 
 ### Preparing data
 
@@ -111,8 +111,8 @@ let line_tp =
 
 (**
 If a variable that determines the position on the vertical axis is uncertain, 
-bands corresponding to the given quantiles of the uncertain values are displayed instead of line segments.
-*)
+bands corresponding to the given quantiles of the uncertain values are displayed in addition to the line segments,
+which represent median values. *)
 
 let y_uncertain = npz |> quantiles "p"
 
@@ -170,7 +170,7 @@ let markers_colors =
 let markers_colors_sizes = 
   [ Plot.markers(lon, lat, 
       color = MarkersColor.Values wheat, colorPalette = "Red,Green,Yellow,Blue", 
-      size = MarkersSize.Values wheat, sizeRange = (5.0, 25.0),
+      size = MarkersSize.Values wheat, sizePalette = MarkersSizePalette.Normalized(), 
       shape = MarkersShape.Diamond, 
       displayName = "wheat",
       titles = Titles.markers(color = "wheat production", size = "wheat production")) ] 
@@ -207,7 +207,6 @@ let markers_bulleyes =
   [ Plot.markers(lon, lat, 
       color = MarkersColor.UncertainValues wheat_uncertain,
       size = MarkersSize.Value 15.0,
-      shape = MarkersShape.Circle,
       displayName = "wheat")] 
   |> Chart.ofList
 

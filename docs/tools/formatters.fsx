@@ -1,6 +1,7 @@
 #r "../../packages/docs/Angara.Serialization/lib/net452/Angara.Serialization.dll"
 #r "../../packages/docs/Angara.Serialization.Json/lib/net452/Angara.Serialization.Json.dll"
 #r "../../packages/docs/Angara.Reinstate/lib/net452/Angara.Reinstate.dll"
+#r "../../packages/docs/Suave/lib/net40/Suave.dll"
 #r "../../packages/docs/Angara.Html/lib/net452/Angara.Html.dll"
 #r "../../bin/Angara.Chart/Angara.Chart.dll"
 
