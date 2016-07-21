@@ -170,7 +170,7 @@ let markers_colors =
 let markers_colors_sizes = 
   [ Plot.markers(lon, lat, 
       color = MarkersColor.Values wheat, colorPalette = "Red,Green,Yellow,Blue", 
-      size = MarkersSize.Values wheat, sizePalette = MarkersSizePalette.Normalized(), 
+      size = MarkersSize.Values wheat, sizePalette = MarkersSizePalette.Normalized(5.0, 15.0), 
       shape = MarkersShape.Diamond, 
       displayName = "wheat",
       titles = Titles.markers(color = "wheat production", size = "wheat production")) ] 
@@ -192,7 +192,7 @@ let wheat_uncertain = uwheat |> quantiles "w"
 let markers_petals =
   [ Plot.markers(lon, lat, 
       color = MarkersColor.Values wheat_uncertain.median,
-      size = MarkersSize.UncertainValues wheat_uncertain, sizeRange = (5.0, 25.0),
+      size = MarkersSize.UncertainValues wheat_uncertain, sizePalette = MarkersSizePalette.Normalized(5.0, 15.0),
       displayName = "wheat")] 
   |> Chart.ofList
 

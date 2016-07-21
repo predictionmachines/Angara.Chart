@@ -5,7 +5,6 @@
 * Provides property "sizePalette" for markers.
 
 
-
 #### 0.2.1 - July 20, 2016
 
 * Uses IDD 1.3.0

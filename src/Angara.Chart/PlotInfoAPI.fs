@@ -219,14 +219,15 @@ type Plot private () =
                       | None -> Map.empty
 
         let shape2 =
-            match shape with
-            | Some s -> s
+            match shape with            
+            | Some (Custom null)
             | None ->
                 match color, size, y with
                 | Some (MarkersColor.UncertainValues _), _, _ -> Custom "bulleye"
                 | _, MarkersSize.UncertainValues _, _ -> Custom "petals"
                 | _, _, MarkersY.UncertainValues _ -> Custom "boxwhisker"
                 | _, _, _ -> defaultShape
+            | Some s -> s
 
         { Kind = markersType
         ; DisplayName = name
@@ -241,7 +242,7 @@ type Plot private () =
         let colorPalette = defaultArg colorPalette defaultColorPalette
         let size = defaultArg size (MarkersSize.Value defaultSize)
         let sizePalette = defaultArg sizePalette defaultSizePalette
-        let shape = defaultArg shape defaultShape
+        let shape = defaultArg shape (Custom null)
         let borderColor = defaultArg borderColor defaultBorderColor
         let name = defaultArg displayName "markers"
         let titles = defaultArg titles defaultMarkersTitles
