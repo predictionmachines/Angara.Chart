@@ -20,5 +20,5 @@ group Test
 group Docs
   source https://www.nuget.org/api/v2
 
-  nuget Angara.Html ~> 0.2.4
+  nuget Angara.Html ~> 0.2.5
   nuget Angara.Table ~> 0.2.3
