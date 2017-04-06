@@ -1,6 +1,13 @@
-## 0.2.3 - April 6, 2017
+## 0.2.4 - April 6, 2017
 
 * Uses IDD 1.5.1
+
+#### 0.2.3 - July 21, 2016
+
+* Uses IDD 1.4.0
+* Enables uncertain markers.
+* Provides property "sizePalette" for markers.
+* Fixes border color settings for markers.
 
 #### 0.2.2 - July 21, 2016
 
