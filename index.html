@@ -75,17 +75,17 @@ Powered by JavaScript library <a href="https://github.com/predictionmachines/Int
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_393274953fc94349b91a90671edc43de = {
+        var content_ecc92a66bbcd43b49508f76aabb4db91 = {
   ":Chart": [
     {
       "displayName": "line",
       "kind": "line",
       "properties": {
-        "fill_68": "#1F497D",
-        "fill_95": "#1F497D",
+        "fill68": "#1F497D",
+        "fill95": "#1F497D",
         "stroke": "#1F497D",
         "thickness": 1.0,
         "treatAs": "0",
@@ -98,7 +98,7 @@ Powered by JavaScript library <a href="https://github.com/predictionmachines/Int
       "displayName": "markers",
       "kind": "markers",
       "properties": {
-        "border": "none",
+        "borderColor": "black",
         "color": "#606060",
         "shape": "box",
         "size": 8.0,
@@ -110,34 +110,33 @@ Powered by JavaScript library <a href="https://github.com/predictionmachines/Int
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_393274953fc94349b91a90671edc43de');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_393274953fc94349b91a90671edc43de);
+            var viewer = document.getElementById('container_ecc92a66bbcd43b49508f76aabb4db91');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_ecc92a66bbcd43b49508f76aabb4db91);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_393274953fc94349b91a90671edc43de" class="viewer-container">
+    <div style="height:400px" id="container_ecc92a66bbcd43b49508f76aabb4db91" class="viewer-container">
     </div>
 </section>
 
@@ -209,17 +208,17 @@ data which then is displayed with Angara.Chart.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_e5533d90e8bd4d0cb5f67ef2f8510928 = {
+        var content_452bbedd512a407c8541a8820e36f266 = {
   ":Chart": [
     {
       "displayName": "line",
       "kind": "line",
       "properties": {
-        "fill_68": "#1F497D",
-        "fill_95": "#1F497D",
+        "fill68": "#1F497D",
+        "fill95": "#1F497D",
         "stroke": "#1F497D",
         "thickness": 1.0,
         "treatAs": "0",
@@ -230,34 +229,33 @@ data which then is displayed with Angara.Chart.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_e5533d90e8bd4d0cb5f67ef2f8510928');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_e5533d90e8bd4d0cb5f67ef2f8510928);
+            var viewer = document.getElementById('container_452bbedd512a407c8541a8820e36f266');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_452bbedd512a407c8541a8820e36f266);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_e5533d90e8bd4d0cb5f67ef2f8510928" class="viewer-container">
+    <div style="height:400px" id="container_452bbedd512a407c8541a8820e36f266" class="viewer-container">
     </div>
 </section>
 
@@ -281,17 +279,17 @@ See the API Reference for other optional parameteres of the line plot.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_e732a8e5dc724371909a5e9a7e379c4a = {
+        var content_2ac69782e33d4d7ea1be1b4a26499420 = {
   ":Chart": [
     {
       "displayName": "line",
       "kind": "line",
       "properties": {
-        "fill_68": "#1F497D",
-        "fill_95": "#1F497D",
+        "fill68": "#1F497D",
+        "fill95": "#1F497D",
         "stroke": "#00007F",
         "thickness": 2.0,
         "treatAs": "0",
@@ -306,34 +304,33 @@ See the API Reference for other optional parameteres of the line plot.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_e732a8e5dc724371909a5e9a7e379c4a');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_e732a8e5dc724371909a5e9a7e379c4a);
+            var viewer = document.getElementById('container_2ac69782e33d4d7ea1be1b4a26499420');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_2ac69782e33d4d7ea1be1b4a26499420);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_e732a8e5dc724371909a5e9a7e379c4a" class="viewer-container">
+    <div style="height:400px" id="container_2ac69782e33d4d7ea1be1b4a26499420" class="viewer-container">
     </div>
 </section>
 
@@ -355,17 +352,17 @@ which represent median values.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_75bba1b1802d416aaafcc6184f031026 = {
+        var content_10c1caf052104d1ea5cfbbdf90489ca0 = {
   ":Chart": [
     {
       "displayName": "line",
       "kind": "line",
       "properties": {
-        "fill_68": "#1F497D",
-        "fill_95": "#1F497D",
+        "fill68": "#1F497D",
+        "fill95": "#1F497D",
         "stroke": "#1F497D",
         "thickness": 1.0,
         "treatAs": "0",
@@ -386,34 +383,33 @@ which represent median values.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_75bba1b1802d416aaafcc6184f031026');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_75bba1b1802d416aaafcc6184f031026);
+            var viewer = document.getElementById('container_10c1caf052104d1ea5cfbbdf90489ca0');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_10c1caf052104d1ea5cfbbdf90489ca0);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_75bba1b1802d416aaafcc6184f031026" class="viewer-container">
+    <div style="height:400px" id="container_10c1caf052104d1ea5cfbbdf90489ca0" class="viewer-container">
     </div>
 </section>
 
@@ -435,10 +431,10 @@ which represent median values.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_f5dc27be3a374fdd973ea60e0537ed26 = {
+        var content_3723e2c36cf04a6a9c74d22675b19547 = {
   ":Chart": [
     {
       "displayName": "area",
@@ -458,34 +454,33 @@ which represent median values.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_f5dc27be3a374fdd973ea60e0537ed26');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_f5dc27be3a374fdd973ea60e0537ed26);
+            var viewer = document.getElementById('container_3723e2c36cf04a6a9c74d22675b19547');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_3723e2c36cf04a6a9c74d22675b19547);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_f5dc27be3a374fdd973ea60e0537ed26" class="viewer-container">
+    <div style="height:400px" id="container_3723e2c36cf04a6a9c74d22675b19547" class="viewer-container">
     </div>
 </section>
 
@@ -511,16 +506,16 @@ but still it allows creating new shapes.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_913848260ff540a9b139dda149a08a81 = {
+        var content_21edf89389b6457195ed4644c8f43a41 = {
   ":Chart": [
     {
       "displayName": "wheat",
       "kind": "markers",
       "properties": {
-        "border": "none",
+        "borderColor": "black",
         "color": "#606060",
         "shape": "box",
         "size": 8.0,
@@ -532,53 +527,50 @@ but still it allows creating new shapes.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_913848260ff540a9b139dda149a08a81');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_913848260ff540a9b139dda149a08a81);
+            var viewer = document.getElementById('container_21edf89389b6457195ed4644c8f43a41');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_21edf89389b6457195ed4644c8f43a41);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_913848260ff540a9b139dda149a08a81" class="viewer-container">
+    <div style="height:400px" id="container_21edf89389b6457195ed4644c8f43a41" class="viewer-container">
     </div>
 </section>
 
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
-<span class="l"> 2: </span>
-<span class="l"> 3: </span>
-<span class="l"> 4: </span>
-<span class="l"> 5: </span>
-<span class="l"> 6: </span>
-<span class="l"> 7: </span>
-<span class="l"> 8: </span>
-<span class="l"> 9: </span>
-<span class="l">10: </span>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+<span class="l">8: </span>
+<span class="l">9: </span>
 </pre></td>
 <td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs59', 159)" onmouseover="showTip(event, 'fs59', 159)" class="i">markers_colors</span> <span class="o">=</span>
   [ <span onmouseout="hideTip(event, 'fs15', 160)" onmouseover="showTip(event, 'fs15', 160)" class="t">Plot</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 161)" onmouseover="showTip(event, 'fs17', 161)" class="f">markers</span>(<span onmouseout="hideTip(event, 'fs55', 162)" onmouseover="showTip(event, 'fs55', 162)" class="i">lon</span>, <span onmouseout="hideTip(event, 'fs56', 163)" onmouseover="showTip(event, 'fs56', 163)" class="i">lat</span>, 
       <span class="i">color</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs60', 164)" onmouseover="showTip(event, 'fs60', 164)" class="t">MarkersColor</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs61', 165)" onmouseover="showTip(event, 'fs61', 165)" class="p">Values</span> <span onmouseout="hideTip(event, 'fs57', 166)" onmouseover="showTip(event, 'fs57', 166)" class="i">wheat</span>, 
-      <span class="i">colorPalette</span> <span class="o">=</span> <span class="s">&quot;0=Red=Green=Yellow=Blue=10&quot;</span>,
-      <span class="i">borderColor</span> <span class="o">=</span> <span class="s">&quot;black&quot;</span>, 
+      <span class="i">colorPalette</span> <span class="o">=</span> <span class="s">&quot;0=Red=Green=Yellow=Blue=10&quot;</span>, 
       <span class="i">shape</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs62', 167)" onmouseover="showTip(event, 'fs62', 167)" class="t">MarkersShape</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs63', 168)" onmouseover="showTip(event, 'fs63', 168)" class="p">Circle</span>, 
       <span class="i">displayName</span> <span class="o">=</span> <span class="s">&quot;wheat&quot;</span>,
       <span class="i">titles</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs42', 169)" onmouseover="showTip(event, 'fs42', 169)" class="t">Titles</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs64', 170)" onmouseover="showTip(event, 'fs64', 170)" class="f">markers</span>(<span class="s">&quot;lon&quot;</span>, <span class="s">&quot;lat&quot;</span>, <span class="i">color</span> <span class="o">=</span> <span class="s">&quot;wheat production&quot;</span>)) ] 
@@ -588,16 +580,16 @@ but still it allows creating new shapes.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_f7026b849b914f14b43aabe1a888e282 = {
+        var content_cfabd73cdf2b4c5b9a1524ee19717968 = {
   ":Chart": [
     {
       "displayName": "wheat",
       "kind": "markers",
       "properties": {
-        "border": "black",
+        "borderColor": "black",
         "color:double array": "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",
         "colorPalette": "0=Red=Green=Yellow=Blue=10",
         "shape": "circle",
@@ -614,34 +606,33 @@ but still it allows creating new shapes.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_f7026b849b914f14b43aabe1a888e282');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_f7026b849b914f14b43aabe1a888e282);
+            var viewer = document.getElementById('container_cfabd73cdf2b4c5b9a1524ee19717968');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_cfabd73cdf2b4c5b9a1524ee19717968);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_f7026b849b914f14b43aabe1a888e282" class="viewer-container">
+    <div style="height:400px" id="container_cfabd73cdf2b4c5b9a1524ee19717968" class="viewer-container">
     </div>
 </section>
 
@@ -666,16 +657,16 @@ but still it allows creating new shapes.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_1aa158ac66844121b15c1f1d40b5c665 = {
+        var content_4e5d7bae6c43426293a61ec83ea43099 = {
   ":Chart": [
     {
       "displayName": "wheat",
       "kind": "markers",
       "properties": {
-        "border": "none",
+        "borderColor": "black",
         "color:double array": "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",
         "colorPalette": "Red,Green,Yellow,Blue",
         "shape": "diamond",
@@ -697,34 +688,33 @@ but still it allows creating new shapes.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_1aa158ac66844121b15c1f1d40b5c665');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_1aa158ac66844121b15c1f1d40b5c665);
+            var viewer = document.getElementById('container_4e5d7bae6c43426293a61ec83ea43099');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_4e5d7bae6c43426293a61ec83ea43099);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_1aa158ac66844121b15c1f1d40b5c665" class="viewer-container">
+    <div style="height:400px" id="container_4e5d7bae6c43426293a61ec83ea43099" class="viewer-container">
     </div>
 </section>
 
@@ -754,16 +744,16 @@ Data series <code>size</code> is a set of quantiles which must contain <code>low
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_75e5af33bbfa4599b182d814eaadaa35 = {
+        var content_971aa691fe4049d7ab1223785258f4c3 = {
   ":Chart": [
     {
       "displayName": "wheat",
       "kind": "markers",
       "properties": {
-        "border": "none",
+        "borderColor": "black",
         "color:double array": "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",
         "colorPalette": "#a6611aff=0.09090909090909091=#ca8325ff=0.18181818181818182=#d8a145ff=0.2727272727272727=#ddba6fff=0.36363636363636364=#cfdb7dff=0.4545454545454546=#92d67eff=0.5454545454545454=#7fd1a1ff=0.6363636363636363=#6cccbdff=0.7272727272727273=#2cd2b8ff=0.8181818181818182=#11b098ff=0.9090909090909092=#018571ff",
         "shape": "petals",
@@ -788,34 +778,33 @@ Data series <code>size</code> is a set of quantiles which must contain <code>low
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_75e5af33bbfa4599b182d814eaadaa35');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_75e5af33bbfa4599b182d814eaadaa35);
+            var viewer = document.getElementById('container_971aa691fe4049d7ab1223785258f4c3');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_971aa691fe4049d7ab1223785258f4c3);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_75e5af33bbfa4599b182d814eaadaa35" class="viewer-container">
+    <div style="height:400px" id="container_971aa691fe4049d7ab1223785258f4c3" class="viewer-container">
     </div>
 </section>
 
@@ -839,16 +828,16 @@ Data series <code>size</code> is a size in pixels, same for all markers;
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_d47a202e16d6481c8e76add85fc24ba2 = {
+        var content_d092f421384b40b791a4a955198dfc49 = {
   ":Chart": [
     {
       "displayName": "wheat",
       "kind": "markers",
       "properties": {
-        "border": "none",
+        "borderColor": "black",
         "color": {
           "lower68:double array": "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",
           "lower95:double array": "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",
@@ -867,34 +856,33 @@ Data series <code>size</code> is a size in pixels, same for all markers;
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_d47a202e16d6481c8e76add85fc24ba2');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_d47a202e16d6481c8e76add85fc24ba2);
+            var viewer = document.getElementById('container_d092f421384b40b791a4a955198dfc49');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_d092f421384b40b791a4a955198dfc49);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_d47a202e16d6481c8e76add85fc24ba2" class="viewer-container">
+    <div style="height:400px" id="container_d092f421384b40b791a4a955198dfc49" class="viewer-container">
     </div>
 </section>
 
@@ -916,16 +904,16 @@ which may contain all or some of properties <code>median</code>, <code>lower95</
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_f247b3b1d01d4681acd495d45f1dc8b8 = {
+        var content_1a6124d8c173417dae2357b801c66bd6 = {
   ":Chart": [
     {
       "displayName": "p",
       "kind": "markers",
       "properties": {
-        "border": "none",
+        "borderColor": "black",
         "color": "#606060",
         "shape": "boxwhisker",
         "size": 8.0,
@@ -946,41 +934,39 @@ which may contain all or some of properties <code>median</code>, <code>lower95</
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_f247b3b1d01d4681acd495d45f1dc8b8');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_f247b3b1d01d4681acd495d45f1dc8b8);
+            var viewer = document.getElementById('container_1a6124d8c173417dae2357b801c66bd6');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_1a6124d8c173417dae2357b801c66bd6);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_f247b3b1d01d4681acd495d45f1dc8b8" class="viewer-container">
+    <div style="height:400px" id="container_1a6124d8c173417dae2357b801c66bd6" class="viewer-container">
     </div>
 </section>
 
 <p><strong>Heatmap</strong> displays a graphical representation of data where the individual values contained
 in a matrix are represented as colors. If the values are uncertain,
-it allows to see quantiles of each point and highlight regions with similar values.
-The plot supports <code>NaN</code> as all other plots; corresponding cells are colored with transparent grey.</p>
+it allows to see quantiles of each point and highlight regions with similar values.</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 <span class="l">3: </span>
@@ -996,10 +982,10 @@ The plot supports <code>NaN</code> as all other plots; corresponding cells are c
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_f5b2df72aa6040d59485fd910f35ca03 = {
+        var content_8281b9c799d0436dab1bd6f65bdc9871 = {
   ":Chart": [
     {
       "displayName": "heatmap",
@@ -1016,34 +1002,33 @@ The plot supports <code>NaN</code> as all other plots; corresponding cells are c
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_f5b2df72aa6040d59485fd910f35ca03');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_f5b2df72aa6040d59485fd910f35ca03);
+            var viewer = document.getElementById('container_8281b9c799d0436dab1bd6f65bdc9871');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_8281b9c799d0436dab1bd6f65bdc9871);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_f5b2df72aa6040d59485fd910f35ca03" class="viewer-container">
+    <div style="height:400px" id="container_8281b9c799d0436dab1bd6f65bdc9871" class="viewer-container">
     </div>
 </section>
 
@@ -1058,10 +1043,10 @@ The plot supports <code>NaN</code> as all other plots; corresponding cells are c
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_01e5b309cdce42529b9b58026b79866e = {
+        var content_d9ee052d29a94150872d56ba9220ae53 = {
   ":Chart": [
     {
       "displayName": "heatmap",
@@ -1078,34 +1063,33 @@ The plot supports <code>NaN</code> as all other plots; corresponding cells are c
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_01e5b309cdce42529b9b58026b79866e');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_01e5b309cdce42529b9b58026b79866e);
+            var viewer = document.getElementById('container_d9ee052d29a94150872d56ba9220ae53');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_d9ee052d29a94150872d56ba9220ae53);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_01e5b309cdce42529b9b58026b79866e" class="viewer-container">
+    <div style="height:400px" id="container_d9ee052d29a94150872d56ba9220ae53" class="viewer-container">
     </div>
 </section>
 
@@ -1137,10 +1121,10 @@ under the probe.</p>
 </tr>
 </table>
 <section>
-    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist/Angara.Html.css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist/Angara.Html.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script>
-        var content_23d54f645100489ba2d63b81bf2197fa = {
+        var content_a4e9b0512d52417684e1f157acb2a131 = {
   ":Chart": [
     {
       "displayName": "heatmap",
@@ -1163,34 +1147,33 @@ under the probe.</p>
   ]
 };
         require.config({
-            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.5/dist",  
-
+            baseUrl: "https://cdn.rawgit.com/predictionmachines/Angara/0.2.3/dist",
             paths: {
-                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.1/dist/Angara.Serialization.umd",
-                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.3/dist/Chart",
-                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/Table",
-                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",
+                "angara.serializationjs": "https://cdn.rawgit.com/predictionmachines/Angara.Serialization/v0.2.0/dist/Angara.Serialization.umd",
+                "Chart": "https://cdn.rawgit.com/predictionmachines/Angara.Chart/0.2.0/dist/Chart",
+                "Table": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/Table",
+                "angara.tablejs": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
                 "jquery.dataTables": "https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min",
-                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.3/dist/angara.tablejs",                
-                "idd.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
-                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.4.3/dist/idd.umd",
+                "jquery.dataTables-css": "https://cdn.rawgit.com/predictionmachines/Angara.Table/0.2.2/dist/angara.tablejs",
+                "chartViewer.umd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer.umd",
+                "chartViewer-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/chartViewer",
+                "idd": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
+                "idd-css": "https://cdn.rawgit.com/predictionmachines/InteractiveDataDisplay/v1.3.0/dist/idd",
                 "domReady": "https://cdnjs.cloudflare.com/ajax/libs/require-domReady/2.0.1/domReady.min",
                 "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min",
                 "jquery-ui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui",
                 "css": "https://cdnjs.cloudflare.com/ajax/libs/require-css/0.1.8/css.min",
-                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min",
-                "svg": "https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.3.5/svg.min",
-                "filesaver": "https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver"
+                "rx": "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.min"
             }
         });
         require(['Angara.Show', 'angara.serializationjs', 'domReady!'], function (Angara, Marshalling, document) {
-            var viewer = document.getElementById('container_23d54f645100489ba2d63b81bf2197fa');
-            var content_is = Marshalling.InfoSet.Unmarshal(content_23d54f645100489ba2d63b81bf2197fa);
+            var viewer = document.getElementById('container_a4e9b0512d52417684e1f157acb2a131');
+            var content_is = Marshalling.InfoSet.Unmarshal(content_a4e9b0512d52417684e1f157acb2a131);
             var content = Marshalling.InfoSet.Deserialize(content_is);
             return Angara.Show(content, viewer);
         });
     </script>
-    <div style="height:400px" id="container_23d54f645100489ba2d63b81bf2197fa" class="viewer-container">
+    <div style="height:400px" id="container_a4e9b0512d52417684e1f157acb2a131" class="viewer-container">
     </div>
 </section>
 
