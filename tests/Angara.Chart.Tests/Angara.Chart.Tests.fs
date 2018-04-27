@@ -94,3 +94,10 @@ let ``Box-and-whisker markers are created if color is uncertain``() =
         | StringValue s -> s
         | _ -> "not a string"), 
         "shape")
+
+[<Test>]
+let ``Serialization of Axes and Layout`` () =
+    let chartInfo = [] |> Chart.ofList |> Chart.setLayout ChartLayout.Lean |> Chart.setXAxis (Labelled ([| 1.0; 2.0; 1.5|], [| "A"; "B"; "C" |], 40.0) )|> Chart.setYAxis Numerical
+    let infoSet = ArtefactSerializer.Serialize lib chartInfo
+    let chartInfo2 = ArtefactSerializer.Deserialize lib infoSet
+    Assert.AreEqual(chartInfo, chartInfo2)
