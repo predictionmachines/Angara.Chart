@@ -378,7 +378,7 @@ Target "ReleaseOnGitHub" (fun _ ->
     
     // Changing versions in bower files
     let version = sprintf @"""version"": ""%s""" release.NugetVersion
-    [ "bower.json"; "package.json" ]
+    [ "package.json" ]
     |> Seq.iter (ReplaceInFile (@"""version""\s*:\s*""\d+\.\d+\.\d+""" >=> version))
 
     StageAll ""
