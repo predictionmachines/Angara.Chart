@@ -4,7 +4,7 @@ nuget Angara.Serialization ~> 0.2.0
 group Build
   source https://nuget.org/api/v2
   
-nuget npm.js
+  nuget Yarnpkg.Yarn ~> 1.6.0
   nuget SourceLink.Fake
   nuget FAKE
   nuget FSharp.Formatting

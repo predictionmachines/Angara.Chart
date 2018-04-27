@@ -1,4 +1,10 @@
-## 0.2.4 - April 6, 2017
+## 0.3.0 - April 27, 2018
+
+* Introduces `Angara.Chart.CSharp`, a C# wrapper for `Angara.Chart`.
+* Additional `Lean` mode for `ChartViewer` JavaScript control.
+* Uses IDD 1.5.4
+
+#### 0.2.4 - April 6, 2017
 
 * Uses IDD 1.5.1
 

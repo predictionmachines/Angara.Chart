@@ -1,6 +1,6 @@
 type project
 title
-    Angara.Chart
+    Angara.Chart.CSharp
 owners
     Microsoft Research; MSU ITIS Lab
 authors 
@@ -16,8 +16,8 @@ requireLicenseAcceptance
 copyright
     Copyright 2018
 tags
-    Chart Plot Visualization F#
+    Chart Plot Visualization C#
 summary
-    Data visualization library for F#.
+    Data visualization library for C#.
 description
-    An F# library that allows to define and display a chart as a collection of plots such as line, band, markers, heatmap. Supports visualization of uncertain values. Powered by JavaScript library InteractiveDataDisplay.
+    C# wrapper for Angara.Chart library that allows to define and display a chart as a collection of plots such as line, band, markers, heatmap. Supports visualization of uncertain values. Powered by JavaScript library InteractiveDataDisplay.
