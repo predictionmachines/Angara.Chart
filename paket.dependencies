@@ -1,12 +1,12 @@
 source https://nuget.org/api/v2
-nuget Angara.Serialization ~> 0.2.0
+nuget Angara.Serialization ~> 0.3.0
 
 group Build
   source https://nuget.org/api/v2
   
   nuget Yarnpkg.Yarn ~> 1.6.0
   nuget SourceLink.Fake
-  nuget FAKE
+  nuget FAKE >= 4.64.1
   nuget FSharp.Formatting
 
   github fsharp/FAKE modules/Octokit/Octokit.fsx

@@ -1,11 +1,11 @@
 NUGET
   remote: https://www.nuget.org/api/v2
-    Angara.Serialization (0.2.1)
+    Angara.Serialization (0.3)
 
 GROUP Build
 NUGET
   remote: https://www.nuget.org/api/v2
-    FAKE (4.41.6)
+    FAKE (4.64.12)
     FSharp.Compiler.Service (2.0.0.6)
     FSharp.Formatting (2.14.4)
       FSharp.Compiler.Service (2.0.0.6)
