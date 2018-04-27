@@ -10,5 +10,8 @@ open System.Reflection
 do ()
 
 module internal AssemblyVersionInformation =
-    let [<Literal>] Version = "0.2.4"
-    let [<Literal>] InformationalVersion = "0.2.4"
+    let [<Literal>] AssemblyTitle = "Angara.Chart"
+    let [<Literal>] AssemblyProduct = "Angara.Chart"
+    let [<Literal>] AssemblyDescription = "Data visualization library for F#."
+    let [<Literal>] AssemblyVersion = "0.2.4"
+    let [<Literal>] AssemblyFileVersion = "0.2.4"
