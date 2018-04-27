@@ -470,7 +470,7 @@ Target "All" DoNothing
   ==> "ReleaseOnGitHub"  
   
 "BuildPackage"
-  ==> "PublishNuget"
+  //==> "PublishNuget"
   ==> "ReleaseOnGitHub"
 
 RunTargetOrDefault "All"
