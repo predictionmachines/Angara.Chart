@@ -1,14 +1,19 @@
-### 0.2.3 - July 21, 2016
+## 0.2.4 - April 6, 2017
+
+* Uses IDD 1.5.1
+
+#### 0.2.3 - July 21, 2016
 
 * Uses IDD 1.4.0
 * Enables uncertain markers.
 * Provides property "sizePalette" for markers.
 * Fixes border color settings for markers.
 
+#### 0.2.2 - July 21, 2016
 
-#### 0.2.1 - July 20, 2016
-
-* Uses IDD 1.3.0
+* Uses IDD 1.4.0
+* Enables uncertain markers.
+* Provides property "sizePalette" for markers.
 * Plot "band" is renamed to "area" as it is in IDD.
 * Fixes title for heatmap values.
 

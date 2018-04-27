@@ -276,8 +276,8 @@ type Plot private () =
                 x @ y @
                 [ "stroke", PlotPropertyValue.StringValue stroke
                 ; "thickness", PlotPropertyValue.RealValue thickness
-                ; "fill_68", PlotPropertyValue.StringValue fill68
-                ; "fill_95", PlotPropertyValue.StringValue fill95
+                ; "fill68", PlotPropertyValue.StringValue fill68
+                ; "fill95", PlotPropertyValue.StringValue fill95
                 ; "treatAs", PlotPropertyValue.StringValue (match treatAs with LineTreatAs.Function -> "0" | LineTreatAs.Trajectory -> "1") ])
         let titles =  match titles with
                       | Some value -> 
