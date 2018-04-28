@@ -4,14 +4,14 @@ using System.Reflection;
 [assembly: AssemblyTitleAttribute("Angara.Chart.CSharp")]
 [assembly: AssemblyProductAttribute("Angara.Chart")]
 [assembly: AssemblyDescriptionAttribute("Data visualization library for F#.")]
-[assembly: AssemblyVersionAttribute("0.3.0")]
-[assembly: AssemblyFileVersionAttribute("0.3.0")]
+[assembly: AssemblyVersionAttribute("0.3.1")]
+[assembly: AssemblyFileVersionAttribute("0.3.1")]
 namespace System {
     internal static class AssemblyVersionInformation {
         internal const System.String AssemblyTitle = "Angara.Chart.CSharp";
         internal const System.String AssemblyProduct = "Angara.Chart";
         internal const System.String AssemblyDescription = "Data visualization library for F#.";
-        internal const System.String AssemblyVersion = "0.3.0";
-        internal const System.String AssemblyFileVersion = "0.3.0";
+        internal const System.String AssemblyVersion = "0.3.1";
+        internal const System.String AssemblyFileVersion = "0.3.1";
     }
 }

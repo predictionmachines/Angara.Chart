@@ -5,13 +5,13 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("Angara.Chart")>]
 [<assembly: AssemblyProductAttribute("Angara.Chart")>]
 [<assembly: AssemblyDescriptionAttribute("Data visualization library for F#.")>]
-[<assembly: AssemblyVersionAttribute("0.3.0")>]
-[<assembly: AssemblyFileVersionAttribute("0.3.0")>]
+[<assembly: AssemblyVersionAttribute("0.3.1")>]
+[<assembly: AssemblyFileVersionAttribute("0.3.1")>]
 do ()
 
 module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "Angara.Chart"
     let [<Literal>] AssemblyProduct = "Angara.Chart"
     let [<Literal>] AssemblyDescription = "Data visualization library for F#."
-    let [<Literal>] AssemblyVersion = "0.3.0"
-    let [<Literal>] AssemblyFileVersion = "0.3.0"
+    let [<Literal>] AssemblyVersion = "0.3.1"
+    let [<Literal>] AssemblyFileVersion = "0.3.1"

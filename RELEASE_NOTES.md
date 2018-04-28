@@ -1,4 +1,8 @@
-## 0.3.0 - April 27, 2018
+## 0.3.1 - April 28, 2018
+
+* Custom axes are now supported, but only in `Lean` mode
+
+#### 0.3.0 - April 27, 2018
 
 * Introduces `Angara.Chart.CSharp`, a C# wrapper for `Angara.Chart`.
 * Additional `Lean` mode for `ChartViewer` JavaScript control.
